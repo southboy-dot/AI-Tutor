@@ -1,0 +1,114 @@
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        /* Custom loading spinner */
+        .loader {
+            border: 3px solid rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            border-top: 3px solid #5D5CDE;
+            width: 24px;
+            height: 24px;
+            animation: spin 1s linear infinite;
+        }
+        
+        .dark .loader {
+            border: 3px solid rgba(0, 0, 0, 0.3);
+            border-top: 3px solid #5D5CDE;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        /* Progress bar animations */
+        .progress-animate {
+            transition: width 0.5s ease-in-out;
+        }
+        
+        /* South Sudan flag-inspired color accents */
+        .ss-accent {
+            background: linear-gradient(to right, #000000, #0F47AF, #BF0A30, #006847);
+            height: 4px;
+        }
+        
+        /* Responsive content */
+        .content-container {
+            max-height: 60vh;
+            overflow-y: auto;
+        }
+        
+        /* Markdown content styling */
+        .markdown-content h1 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-top: 1rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .markdown-content h2 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-top: 1rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .markdown-content p {
+            margin-bottom: 0.75rem;
+        }
+        
+        .markdown-content ul, .markdown-content ol {
+            margin-left: 1.5rem;
+            margin-bottom: 0.75rem;
+        }
+        
+        .markdown-content ul {
+            list-style-type: disc;
+        }
+        
+        .markdown-content ol {
+            list-style-type: decimal;
+        }
+        
+        .markdown-content pre {
+            background-color: #f1f1f1;
+            padding: 0.75rem;
+            border-radius: 0.25rem;
+            overflow-x: auto;
+            margin-bottom: 0.75rem;
+        }
+        
+        .dark .markdown-content pre {
+            background-color: #333;
+        }
+        
+        .markdown-content code {
+            font-family: monospace;
+        }
+        
+        .markdown-content table {
+            border-collapse: collapse;
+            margin-bottom: 0.75rem;
+            width: 100%;
+        }
+        
+        .markdown-content th, .markdown-content td {
+            border: 1px solid #ddd;
+            padding: 0.5rem;
+        }
+        
+        .dark .markdown-content th, .dark .markdown-content td {
+            border-color: #555;
+        }
+        
+        .markdown-content th {
+            background-color: #f1f1f1;
+            font-weight: 600;
+        }
+        
+        .dark .markdown-content th {
+            background-color: #333;
+        }
